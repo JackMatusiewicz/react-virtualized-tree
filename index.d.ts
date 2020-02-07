@@ -40,6 +40,7 @@ export interface TreeProps {
   width?: number;
   scrollToId?: number;
   scrollToAlignment?: string;
+  minimumHeight?: number;
 }
 
 export default class Tree extends React.Component<TreeProps> {}

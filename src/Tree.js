@@ -70,7 +70,7 @@ export default class Tree extends React.Component {
     const {nodes, width, scrollToIndex, scrollToAlignment} = this.props;
 
     return (
-      <AutoSizer disableWidth={Boolean(width)}>
+      <AutoSizer disableWidth={Boolean(width)} minHeight={this.props.minimumHeight || 0}>
         {({height, width: autoWidth}) => (
           <List
             deferredMeasurementCache={this._cache}
